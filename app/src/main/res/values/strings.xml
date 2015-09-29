@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Hoy Se Juega</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_crear__equipo">Crear Equipo</string>
+
+    <string name="title_section1">Futbol 5</string>
+    <string name="title_section2">Futbol 7</string>
+    <string name="title_section3">Futbol 9</string>
+    <string name="title_section4">Futbol 11</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+    <string name="title_activity_equipos__creados">Tus Equipos:</string>
+</resources>

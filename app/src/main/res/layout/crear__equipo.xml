@@ -33,9 +33,9 @@
             android:layout_marginLeft="0dp"
             android:layout_marginRight="1dp"
             android:layout_marginTop="5dp"
-            android:layout_marginBottom="4dp"
             android:onClick="Contactos"
-            android:clickable="true" />
+            android:clickable="true"
+            android:layout_marginBottom="40dp" />
 
         <ImageButton
             android:layout_width="76dp"
@@ -70,16 +70,60 @@
             android:onClick="Contactos" />
 
         <EditText
-            android:layout_width="100dp"
+            android:layout_width="127dp"
             android:layout_height="43dp"
             android:inputType="textPersonName"
             android:text="Name"
             android:ems="10"
             android:id="@+id/editText2"
             android:layout_gravity="left|bottom"
-            android:layout_marginBottom="87dp"
             android:layout_marginRight="25dp"
-            android:layout_marginLeft="25dp" />
+            android:layout_marginLeft="25dp"
+            android:layout_marginBottom="80dp" />
+
+        <EditText
+            android:layout_width="138dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Name"
+            android:ems="10"
+            android:id="@+id/editText1"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginLeft="15dp" />
+
+        <EditText
+            android:layout_width="131dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Name"
+            android:ems="10"
+            android:id="@+id/editText3"
+            android:layout_gravity="right|bottom"
+            android:layout_marginBottom="80dp"
+            android:clickable="true"
+            android:layout_marginRight="13dp" />
+
+        <EditText
+            android:layout_width="122dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Name"
+            android:ems="10"
+            android:id="@+id/editText4"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="50dp" />
+
+        <EditText
+            android:layout_width="133dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Name"
+            android:ems="10"
+            android:id="@+id/editText5"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="10dp" />
     </FrameLayout>
 
     <!-- android:layout_gravity="start" tells DrawerLayout to treat

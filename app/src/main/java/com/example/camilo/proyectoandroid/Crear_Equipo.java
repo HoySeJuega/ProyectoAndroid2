@@ -73,8 +73,12 @@ public class Crear_Equipo extends Activity
         Intent intent = new Intent(Intent.ACTION_PICK, Contacts.People.CONTENT_URI);
         startActivityForResult(intent, PICK_CONTACT);
     }
-
-
+    
+    private TextView EditText1;
+    private TextView EditText2;
+    private TextView EditText3;
+    private TextView EditText4;
+    private TextView EditText5;
 
     public void onActivityResult(int reqCode, int resultCode, Intent data) {
         super.onActivityResult(reqCode, resultCode, data);
@@ -84,9 +88,14 @@ public class Crear_Equipo extends Activity
                     Uri contactData = data.getData();
                     Cursor c = managedQuery(contactData, null, null, null, null);
                     if (c.moveToFirst()) {
-                        String name = c.getString(c.getColumnIndexOrThrow(Contacts.People.NAME))+":
-                        c.getInt(c.getColumnIndexOrThrow(Contacts.People.NUMBER));
-                        EditText.setText(name);
+                        EditText1 = (TextView) findViewById(R.id.editText1);
+                        EditText2=(TextView) findViewById(R.id.editText2);
+                        EditText3=(TextView) findViewById(R.id.editText3);
+                        EditText4=(TextView) findViewById(R.id.editText4);
+                        EditText5=(TextView) findViewById(R.id.editText5);
+                        String name = c.getString(c.getColumnIndexOrThrow(Contacts.People.NAME)) +
+                                c.getInt(c.getColumnIndexOrThrow(Contacts.People.NUMBER));
+                        EditText1.setText(name);
 
                     }
                 }

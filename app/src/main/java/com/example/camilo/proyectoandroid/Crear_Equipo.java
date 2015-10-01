@@ -73,7 +73,7 @@ public class Crear_Equipo extends Activity
         Intent intent = new Intent(Intent.ACTION_PICK, Contacts.People.CONTENT_URI);
         startActivityForResult(intent, PICK_CONTACT);
     }
-    
+
     private TextView EditText1;
     private TextView EditText2;
     private TextView EditText3;
@@ -95,6 +95,9 @@ public class Crear_Equipo extends Activity
                         EditText5=(TextView) findViewById(R.id.editText5);
                         String name = c.getString(c.getColumnIndexOrThrow(Contacts.People.NAME)) +
                                 c.getInt(c.getColumnIndexOrThrow(Contacts.People.NUMBER));
+
+
+
                         EditText1.setText(name);
 
                     }

@@ -23,7 +23,7 @@
         <ImageButton
             android:layout_width="76dp"
             android:layout_height="76dp"
-            android:id="@+id/imageButton"
+            android:id="@+id/iB2"
             android:layout_gravity="bottom"
             android:layout_marginRight="0dp"
             android:layout_marginTop="40dp"
@@ -36,7 +36,7 @@
         <ImageButton
             android:layout_width="76dp"
             android:layout_height="76dp"
-            android:id="@+id/imageButton4"
+            android:id="@+id/iB1"
             android:layout_gravity="center_horizontal|bottom"
             android:background="@drawable/boton"
             android:layout_marginLeft="0dp"
@@ -49,19 +49,19 @@
         <ImageButton
             android:layout_width="76dp"
             android:layout_height="76dp"
-            android:id="@+id/imageButton5"
+            android:id="@+id/iB3"
             android:layout_gravity="right|bottom"
             android:background="@drawable/boton"
             android:layout_marginBottom="110dp"
             android:layout_marginRight="40dp"
             android:layout_marginLeft="0dp"
-            android:onClick="Contactos"
+            android:onClick="Contactos2"
             android:clickable="true" />
 
         <ImageButton
             android:layout_width="76dp"
             android:layout_height="76dp"
-            android:id="@+id/imageButton6"
+            android:id="@+id/iB4"
             android:layout_gravity="left|center_vertical"
             android:background="@drawable/boton"
             android:layout_marginLeft="70dp"
@@ -71,63 +71,66 @@
         <ImageButton
             android:layout_width="76dp"
             android:layout_height="76dp"
-            android:id="@+id/imageButton7"
+            android:id="@+id/iB5"
             android:layout_gravity="right|center_vertical"
             android:clickable="true"
             android:background="@drawable/boton"
             android:layout_marginRight="70dp"
             android:onClick="Contactos" />
 
-        <EditText
-            android:layout_width="127dp"
-            android:layout_height="43dp"
-            android:inputType="textPersonName"
-            android:ems="10"
-            android:id="@+id/editText2"
-            android:layout_gravity="left|bottom"
-            android:layout_marginRight="25dp"
-            android:layout_marginLeft="25dp"
-            android:layout_marginBottom="80dp" />
-
-        <EditText
-            android:layout_width="138dp"
-            android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:ems="10"
-            android:id="@+id/editText1"
-            android:layout_gravity="center_horizontal|bottom"
-            android:layout_marginLeft="15dp" />
-
-        <EditText
-            android:layout_width="131dp"
-            android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:ems="10"
-            android:id="@+id/editText3"
-            android:layout_gravity="right|bottom"
-            android:layout_marginBottom="80dp"
+        <ImageButton
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:id="@+id/iB6"
+            android:layout_gravity="center_horizontal|top"
+            android:onClick="Acomodar"
+            android:background="@drawable/boton"
             android:clickable="true"
-            android:layout_marginRight="13dp" />
+            android:layout_marginTop="80dp" />
 
-        <EditText
-            android:layout_width="122dp"
-            android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:ems="10"
-            android:id="@+id/editText4"
-            android:layout_gravity="left|center_vertical"
-            android:layout_marginLeft="70dp"
-            android:layout_marginTop="50dp" />
+        <ImageButton
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:id="@+id/iB7"
+            android:layout_gravity="right|top"
+            android:background="@drawable/boton"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="80dp" />
 
-        <EditText
-            android:layout_width="133dp"
-            android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:ems="10"
-            android:id="@+id/editText5"
-            android:layout_gravity="right|center_vertical"
-            android:layout_marginTop="50dp"
-            android:layout_marginRight="10dp" />
+        <ImageButton
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:id="@+id/iB8"
+            android:layout_gravity="left|top"
+            android:background="@drawable/boton"
+            android:layout_marginTop="80dp" />
+
+        <ImageButton
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:id="@+id/iB9"
+            android:layout_gravity="center_horizontal|top"
+            android:background="@drawable/boton"
+            android:focusableInTouchMode="false"
+            android:layout_marginRight="70dp"
+            android:layout_marginTop="80dp" />
+
+        <ImageButton
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:id="@+id/iB10"
+            android:layout_gravity="center_horizontal|top"
+            android:background="@drawable/boton"
+            android:layout_marginRight="80dp" />
+
+        <ImageButton
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:id="@+id/iB11"
+            android:layout_gravity="center_horizontal|top"
+            android:background="@drawable/boton"
+            android:layout_marginLeft="50dp" />
+
     </FrameLayout>
 
     <!-- android:layout_gravity="start" tells DrawerLayout to treat

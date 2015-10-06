@@ -17,6 +17,7 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.Contacts;
+import android.provider.ContactsContract;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -29,8 +30,12 @@ import android.view.WindowManager;
 import android.widget.ArrayAdapter;
 import android.widget.EdgeEffect;
 import android.widget.EditText;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import java.util.ArrayList;
 
 
 public class Crear_Equipo extends Activity
@@ -46,11 +51,28 @@ public class Crear_Equipo extends Activity
      * Used to store the last screen title. For use in {@link #restoreActionBar()}.
      */
     private CharSequence mTitle;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.crear__equipo);
+
+
+
+        ImageButton btn = (ImageButton) findViewById(R.id.iB6);
+        btn.setBackground(null);
+        ImageButton btn2 = (ImageButton) findViewById(R.id.iB7);
+        btn2.setBackground(null);
+        ImageButton btn3 = (ImageButton) findViewById(R.id.iB8);
+        btn3.setBackground(null);
+        ImageButton btn4 = (ImageButton) findViewById(R.id.iB9);
+        btn4.setBackground(null);
+        ImageButton btn5 = (ImageButton) findViewById(R.id.iB10);
+        btn5.setBackground(null);
+        ImageButton btn6 = (ImageButton) findViewById(R.id.iB11);
+        btn6.setBackground(null);
+
+
+
 
         ActionBar bar = getActionBar();
         ColorDrawable colorDrawable = new ColorDrawable(Color.parseColor("#558B2F"));
@@ -77,12 +99,32 @@ public class Crear_Equipo extends Activity
         // update the main content by replacing fragments
         FragmentManager fragmentManager = getFragmentManager();
         fragmentManager.beginTransaction()
+
                 .replace(R.id.container, PlaceholderFragment.newInstance(position + 1))
                 .commit();
+
     }
 
 
 
+
+    public void Contactos2(View View) {
+        Cursor c = getContentResolver().query(
+                ContactsContract.RawContacts.CONTENT_URI,
+                new String[]{ContactsContract.RawContacts.CONTACT_ID, ContactsContract.RawContacts.DISPLAY_NAME_PRIMARY},
+                ContactsContract.RawContacts.ACCOUNT_TYPE + "= ?",
+                new String[]{"com.whatsapp"},
+                null);
+
+        ArrayList<String> myWhatsappContacts = new ArrayList<String>();
+        int contactNameColumn = c.getColumnIndex(ContactsContract.RawContacts.DISPLAY_NAME_PRIMARY);
+        while (c.moveToNext())
+        {
+            // You can also read RawContacts.CONTACT_ID to read the
+            // ContactsContract.Contacts table or any of the other related ones.
+            myWhatsappContacts.add(c.getString(contactNameColumn));
+        }
+    }
 
 
     public void Contactos(View View) {
@@ -97,7 +139,6 @@ public class Crear_Equipo extends Activity
             //Check if package exists or not. If not then code
             //in catch block will be called
             waIntent.setPackage("com.whatsapp");
-
             waIntent.putExtra(Intent.EXTRA_TEXT, text);
             startActivity(Intent.createChooser(waIntent, "Share with"));
 
@@ -109,15 +150,27 @@ public class Crear_Equipo extends Activity
 
 
 
-
-
 }
 
-    private TextView EditText1;
-    private TextView EditText2;
-    private TextView EditText3;
-    private TextView EditText4;
-    private TextView EditText5;
+
+
+
+
+
+
+
+    public void Acomodar(View View){
+        ImageButton btn = (ImageButton)findViewById(R.id.iB6);
+        btn.setBackground(null);
+    }
+
+
+
+
+
+
+
+
 
     public void onActivityResult(int reqCode, int resultCode, Intent data) {
         super.onActivityResult(reqCode, resultCode, data);
@@ -133,15 +186,78 @@ public class Crear_Equipo extends Activity
         switch (number) {
             case 1:
                 mTitle = getString(R.string.title_section1);
+
+                ImageButton btn6 = (ImageButton) findViewById(R.id.iB6);
+                btn6.setBackground(null);
+                ImageButton btn7 = (ImageButton) findViewById(R.id.iB7);
+                btn7.setBackground(null);
+                ImageButton btn8 = (ImageButton) findViewById(R.id.iB8);
+                btn8.setBackground(null);
+                ImageButton btn9 = (ImageButton) findViewById(R.id.iB9);
+                btn9.setBackground(null);
+                ImageButton btn10 = (ImageButton) findViewById(R.id.iB10);
+                btn10.setBackground(null);
+                ImageButton btn11 = (ImageButton) findViewById(R.id.iB11);
+                btn11.setBackground(null);
+
+
                 break;
             case 2:
                 mTitle = getString(R.string.title_section2);
+
+                btn7 = (ImageButton) findViewById(R.id.iB7);
+                btn7.setBackgroundDrawable(getResources().getDrawable(R.drawable.boton));
+                btn6 = (ImageButton) findViewById(R.id.iB6);
+                btn6.setBackgroundDrawable(getResources().getDrawable(R.drawable.boton));
+                btn8 = (ImageButton) findViewById(R.id.iB8);
+                btn8.setBackground(null);
+                btn9 = (ImageButton) findViewById(R.id.iB9);
+                btn9.setBackground(null);
+                btn11 = (ImageButton) findViewById(R.id.iB11);
+                btn11.setBackground(null);
+                btn10 = (ImageButton) findViewById(R.id.iB10);
+                btn10.setBackground(null);
+
+
                 break;
             case 3:
                 mTitle = getString(R.string.title_section3);
+
+                btn7 = (ImageButton) findViewById(R.id.iB7);
+                btn7.setBackgroundDrawable(getResources().getDrawable(R.drawable.boton));
+                btn6 = (ImageButton) findViewById(R.id.iB6);
+                btn6.setBackgroundDrawable(getResources().getDrawable(R.drawable.boton));
+                btn8 = (ImageButton) findViewById(R.id.iB8);
+                btn8.setBackgroundDrawable(getResources().getDrawable(R.drawable.boton));
+                btn9 = (ImageButton) findViewById(R.id.iB9);
+                btn9.setBackgroundDrawable(getResources().getDrawable(R.drawable.boton));
+                btn11 = (ImageButton) findViewById(R.id.iB11);
+                btn11.setBackground(null);
+                btn10 = (ImageButton) findViewById(R.id.iB10);
+                btn10.setBackground(null);
+
+
+
+
                 break;
             case 4:
                 mTitle = getString(R.string.title_section4);
+
+                btn7 = (ImageButton) findViewById(R.id.iB7);
+                btn7.setBackgroundDrawable(getResources().getDrawable(R.drawable.boton));
+                btn6 = (ImageButton) findViewById(R.id.iB6);
+                btn6.setBackgroundDrawable(getResources().getDrawable(R.drawable.boton));
+                btn8 = (ImageButton) findViewById(R.id.iB8);
+                btn8.setBackgroundDrawable(getResources().getDrawable(R.drawable.boton));
+                btn9 = (ImageButton) findViewById(R.id.iB9);
+                btn9.setBackgroundDrawable(getResources().getDrawable(R.drawable.boton));
+                btn11 = (ImageButton) findViewById(R.id.iB11);
+                btn11.setBackgroundDrawable(getResources().getDrawable(R.drawable.boton));
+                btn10 = (ImageButton) findViewById(R.id.iB10);
+                btn10.setBackgroundDrawable(getResources().getDrawable(R.drawable.boton));
+
+
+
                 break;
         }
     }
@@ -173,7 +289,6 @@ public class Crear_Equipo extends Activity
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
-
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             return true;

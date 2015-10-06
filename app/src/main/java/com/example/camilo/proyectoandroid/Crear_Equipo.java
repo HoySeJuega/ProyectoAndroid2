@@ -5,9 +5,14 @@ import android.app.Activity;
 import android.app.ActionBar;
 import android.app.Fragment;
 import android.app.FragmentManager;
+import android.app.Notification;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
 import android.database.Cursor;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -19,18 +24,19 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.support.v4.widget.DrawerLayout;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.ArrayAdapter;
 import android.widget.EdgeEffect;
 import android.widget.EditText;
 import android.widget.TextView;
-
-
+import android.widget.Toast;
 
 
 public class Crear_Equipo extends Activity
         implements NavigationDrawerFragment.NavigationDrawerCallbacks {
 
-    private static final int PICK_CONTACT = 1234;
+    private static final int PICK_CONTACT = 1;
     /**
      * Fragment managing the behaviors, interactions and presentation of the navigation drawer.
      */
@@ -46,6 +52,10 @@ public class Crear_Equipo extends Activity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.crear__equipo);
 
+        ActionBar bar = getActionBar();
+        ColorDrawable colorDrawable = new ColorDrawable(Color.parseColor("#558B2F"));
+        getActionBar().setBackgroundDrawable(colorDrawable);
+
         mNavigationDrawerFragment = (NavigationDrawerFragment)
                 getFragmentManager().findFragmentById(R.id.navigation_drawer);
         mTitle = getTitle();
@@ -54,6 +64,12 @@ public class Crear_Equipo extends Activity
         mNavigationDrawerFragment.setUp(
                 R.id.navigation_drawer,
                 (DrawerLayout) findViewById(R.id.drawer_layout));
+
+        Window window = this.getWindow();
+        window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+        window.setStatusBarColor(this.getResources().getColor(R.color.azul2));
+
+
     }
 
     @Override
@@ -69,10 +85,33 @@ public class Crear_Equipo extends Activity
 
 
 
-    public void Contactos(View View){
-        Intent intent = new Intent(Intent.ACTION_PICK, Contacts.People.CONTENT_URI);
-        startActivityForResult(intent, PICK_CONTACT);
-    }
+    public void Contactos(View View) {
+        PackageManager pm=getPackageManager();
+        try {
+
+            Intent waIntent = new Intent(Intent.ACTION_SEND);
+            waIntent.setType("text/plain");
+            String text = "YOUR TEXT HERE";
+
+            PackageInfo info=pm.getPackageInfo("com.whatsapp", PackageManager.GET_META_DATA);
+            //Check if package exists or not. If not then code
+            //in catch block will be called
+            waIntent.setPackage("com.whatsapp");
+
+            waIntent.putExtra(Intent.EXTRA_TEXT, text);
+            startActivity(Intent.createChooser(waIntent, "Share with"));
+
+        } catch (PackageManager.NameNotFoundException e) {
+            Toast.makeText(this, "WhatsApp not Installed", Toast.LENGTH_SHORT)
+                    .show();
+        }
+
+
+
+
+
+
+}
 
     private TextView EditText1;
     private TextView EditText2;
@@ -82,28 +121,7 @@ public class Crear_Equipo extends Activity
 
     public void onActivityResult(int reqCode, int resultCode, Intent data) {
         super.onActivityResult(reqCode, resultCode, data);
-        switch (reqCode) {
-            case (PICK_CONTACT):
-                if (resultCode == Activity.RESULT_OK) {
-                    Uri contactData = data.getData();
-                    Cursor c = managedQuery(contactData, null, null, null, null);
-                    if (c.moveToFirst()) {
-                        EditText1 = (TextView) findViewById(R.id.editText1);
-                        EditText2=(TextView) findViewById(R.id.editText2);
-                        EditText3=(TextView) findViewById(R.id.editText3);
-                        EditText4=(TextView) findViewById(R.id.editText4);
-                        EditText5=(TextView) findViewById(R.id.editText5);
-                        String name = c.getString(c.getColumnIndexOrThrow(Contacts.People.NAME)) +
-                                c.getInt(c.getColumnIndexOrThrow(Contacts.People.NUMBER));
-
-
-
-                        EditText1.setText(name);
-
-                    }
-                }
-                break;
-        }}
+    }
 
 
 

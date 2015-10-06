@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="azul1">#2196F3</color>
+    <color name="azul1">#212121</color>
 
+    <color name="azul2">#33691E</color>
 
 </resources>

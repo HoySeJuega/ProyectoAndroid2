@@ -17,7 +17,7 @@
         android:onClick="equipos_Creados"
         android:layout_above="@+id/imageButton"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="52dp" />
+        android:layout_marginBottom="20dp" />
 
     <ImageButton
         android:layout_width="300dp"
@@ -28,7 +28,7 @@
         android:background="@drawable/ce"
         android:layout_above="@+id/imageButton2"
         android:layout_alignStart="@+id/imageButton2"
-        android:layout_marginBottom="50dp" />
+        android:layout_marginBottom="20dp" />
 
     <ImageButton
         android:layout_width="50dp"
@@ -37,7 +37,16 @@
         android:background="@drawable/config"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
-        android:clickable="true"
-        android:onClick="Crear_Equipos" />
+        android:clickable="true" />
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:id="@+id/imageView"
+        android:background="@drawable/logo"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/imageButton"
+        android:layout_alignEnd="@+id/imageButton"
+        android:layout_marginRight="40dp" />
 
 </RelativeLayout>

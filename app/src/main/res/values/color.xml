@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="azul1">#212121</color>
+    <color name="azul1">#004D40</color>
 
     <color name="azul2">#33691E</color>
-
+    <color name="verde">#2962FF</color>
 </resources>

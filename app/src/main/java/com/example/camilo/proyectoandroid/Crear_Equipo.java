@@ -6,6 +6,7 @@ import android.app.ActionBar;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.Notification;
+import android.content.ClipData;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageInfo;
@@ -22,16 +23,19 @@ import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.support.v4.widget.DrawerLayout;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.AbsoluteLayout;
 import android.widget.ArrayAdapter;
 import android.widget.EdgeEffect;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -57,19 +61,18 @@ public class Crear_Equipo extends Activity
         setContentView(R.layout.crear__equipo);
 
 
-
-        ImageButton btn = (ImageButton) findViewById(R.id.iB6);
-        btn.setBackground(null);
-        ImageButton btn2 = (ImageButton) findViewById(R.id.iB7);
-        btn2.setBackground(null);
-        ImageButton btn3 = (ImageButton) findViewById(R.id.iB8);
-        btn3.setBackground(null);
-        ImageButton btn4 = (ImageButton) findViewById(R.id.iB9);
-        btn4.setBackground(null);
-        ImageButton btn5 = (ImageButton) findViewById(R.id.iB10);
-        btn5.setBackground(null);
-        ImageButton btn6 = (ImageButton) findViewById(R.id.iB11);
+        ImageButton btn6 = (ImageButton) findViewById(R.id.iB6);
         btn6.setBackground(null);
+        ImageButton btn7 = (ImageButton) findViewById(R.id.iB7);
+        btn7.setBackground(null);
+        ImageButton btn8 = (ImageButton) findViewById(R.id.iB8);
+        btn8.setBackground(null);
+        ImageButton btn9 = (ImageButton) findViewById(R.id.iB9);
+        btn9.setBackground(null);
+        ImageButton btn10 = (ImageButton) findViewById(R.id.iB10);
+        btn10.setBackground(null);
+        ImageButton btn11 = (ImageButton) findViewById(R.id.iB11);
+        btn11.setBackground(null);
 
 
 
@@ -108,32 +111,13 @@ public class Crear_Equipo extends Activity
 
 
 
-    public void Contactos2(View View) {
-        Cursor c = getContentResolver().query(
-                ContactsContract.RawContacts.CONTENT_URI,
-                new String[]{ContactsContract.RawContacts.CONTACT_ID, ContactsContract.RawContacts.DISPLAY_NAME_PRIMARY},
-                ContactsContract.RawContacts.ACCOUNT_TYPE + "= ?",
-                new String[]{"com.whatsapp"},
-                null);
-
-        ArrayList<String> myWhatsappContacts = new ArrayList<String>();
-        int contactNameColumn = c.getColumnIndex(ContactsContract.RawContacts.DISPLAY_NAME_PRIMARY);
-        while (c.moveToNext())
-        {
-            // You can also read RawContacts.CONTACT_ID to read the
-            // ContactsContract.Contacts table or any of the other related ones.
-            myWhatsappContacts.add(c.getString(contactNameColumn));
-        }
-    }
-
-
     public void Contactos(View View) {
         PackageManager pm=getPackageManager();
         try {
 
             Intent waIntent = new Intent(Intent.ACTION_SEND);
             waIntent.setType("text/plain");
-            String text = "YOUR TEXT HERE";
+            String text = "";
 
             PackageInfo info=pm.getPackageInfo("com.whatsapp", PackageManager.GET_META_DATA);
             //Check if package exists or not. If not then code
@@ -152,22 +136,10 @@ public class Crear_Equipo extends Activity
 
 }
 
-
-
-
-
-
-
-
-    public void Acomodar(View View){
+    public void Ocultar(View View){
         ImageButton btn = (ImageButton)findViewById(R.id.iB6);
         btn.setBackground(null);
     }
-
-
-
-
-
 
 
 
@@ -187,6 +159,13 @@ public class Crear_Equipo extends Activity
             case 1:
                 mTitle = getString(R.string.title_section1);
 
+                ImageButton btn4 = (ImageButton) findViewById(R.id.iB4);
+                btn4.setBackgroundDrawable(getResources().getDrawable(R.drawable.boton));
+                btn4.setX(55);
+                btn4.setY(440);
+                ImageButton btn5 = (ImageButton) findViewById(R.id.iB5);
+                btn5.setBackgroundDrawable(getResources().getDrawable(R.drawable.boton));
+
                 ImageButton btn6 = (ImageButton) findViewById(R.id.iB6);
                 btn6.setBackground(null);
                 ImageButton btn7 = (ImageButton) findViewById(R.id.iB7);
@@ -200,15 +179,18 @@ public class Crear_Equipo extends Activity
                 ImageButton btn11 = (ImageButton) findViewById(R.id.iB11);
                 btn11.setBackground(null);
 
-
                 break;
             case 2:
                 mTitle = getString(R.string.title_section2);
 
                 btn7 = (ImageButton) findViewById(R.id.iB7);
                 btn7.setBackgroundDrawable(getResources().getDrawable(R.drawable.boton));
+                btn7.setX(280);
+                btn7.setY(300);
                 btn6 = (ImageButton) findViewById(R.id.iB6);
                 btn6.setBackgroundDrawable(getResources().getDrawable(R.drawable.boton));
+                btn6.setX(280);
+                btn6.setY(650);
                 btn8 = (ImageButton) findViewById(R.id.iB8);
                 btn8.setBackground(null);
                 btn9 = (ImageButton) findViewById(R.id.iB9);
@@ -219,25 +201,41 @@ public class Crear_Equipo extends Activity
                 btn10.setBackground(null);
 
 
+
+
+
+
+
                 break;
             case 3:
                 mTitle = getString(R.string.title_section3);
 
-                btn7 = (ImageButton) findViewById(R.id.iB7);
-                btn7.setBackgroundDrawable(getResources().getDrawable(R.drawable.boton));
-                btn6 = (ImageButton) findViewById(R.id.iB6);
+                btn4 = (ImageButton) findViewById(R.id.iB4);
+                btn4.setBackgroundDrawable(getResources().getDrawable(R.drawable.boton));
+                btn5 = (ImageButton) findViewById(R.id.iB5);
+                btn5.setBackgroundDrawable(getResources().getDrawable(R.drawable.boton));
+                btn4.setX(20);
+                btn5.setX(500);
+                btn6 = (ImageButton) findViewById(R.id.iB7);
                 btn6.setBackgroundDrawable(getResources().getDrawable(R.drawable.boton));
+                btn6.setX(280);
+                btn6.setY(430);
+                btn7 = (ImageButton) findViewById(R.id.iB6);
+                btn7.setBackgroundDrawable(getResources().getDrawable(R.drawable.boton));
+                btn7.setX(280);
+                btn7.setY(650);
                 btn8 = (ImageButton) findViewById(R.id.iB8);
                 btn8.setBackgroundDrawable(getResources().getDrawable(R.drawable.boton));
+                btn8.setX(400);
+                btn8.setY(200);
                 btn9 = (ImageButton) findViewById(R.id.iB9);
                 btn9.setBackgroundDrawable(getResources().getDrawable(R.drawable.boton));
+                btn9.setX(150);
+                btn9.setY(200);
                 btn11 = (ImageButton) findViewById(R.id.iB11);
                 btn11.setBackground(null);
                 btn10 = (ImageButton) findViewById(R.id.iB10);
                 btn10.setBackground(null);
-
-
-
 
                 break;
             case 4:

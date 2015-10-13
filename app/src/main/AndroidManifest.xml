@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.camilo.proyectoandroid"
-    >
+    package="com.example.camilo.proyectoandroid" >
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
 
     <application
         android:allowBackup="true"
@@ -25,6 +26,10 @@
             android:name=".Equipos_Creados"
             android:label="@string/title_activity_equipos__creados" >
         </activity>
+        <activity
+            android:name=".Crear_E_Datos"
+            android:label="@string/title_activity_crear__e__datos" >
+        </activity>
     </application>
-    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
 </manifest>

@@ -5,39 +5,39 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".Inicio"
     android:clickable="false"
-    android:background="@drawable/plantilla"
-    android:touchscreenBlocksFocus="false">
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Salir"
-        android:id="@+id/button3"
-        android:onClick="Salir"
-        android:clickable="true"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="46dp" />
+    android:touchscreenBlocksFocus="false"
+    android:background="#00897B">
 
     <ImageButton
-        android:layout_width="250dp"
-        android:layout_height="60dp"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
         android:id="@+id/imageButton2"
-        android:background="@drawable/asd"
+        android:background="@drawable/ee"
         android:clickable="true"
         android:onClick="equipos_Creados"
-        android:layout_above="@+id/button3"
+        android:layout_above="@+id/imageButton"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="29dp" />
+        android:layout_marginBottom="52dp" />
 
     <ImageButton
-        android:layout_width="250dp"
-        android:layout_height="60dp"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
         android:id="@+id/imageButton3"
-        android:layout_above="@+id/imageButton2"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="22dp"
-        android:background="@drawable/g14769"
         android:clickable="true"
-        android:onClick="crear_Equipo" />
+        android:onClick="Crear_E_Datos"
+        android:background="@drawable/ce"
+        android:layout_above="@+id/imageButton2"
+        android:layout_alignStart="@+id/imageButton2"
+        android:layout_marginBottom="50dp" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/imageButton"
+        android:background="@drawable/config"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:clickable="true"
+        android:onClick="Crear_Equipos" />
+
 </RelativeLayout>

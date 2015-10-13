@@ -15,4 +15,5 @@
 
     <string name="action_example">Example action</string>
     <string name="title_activity_equipos__creados">Tus Equipos:</string>
+    <string name="title_activity_crear__e__datos">Datos:</string>
 </resources>

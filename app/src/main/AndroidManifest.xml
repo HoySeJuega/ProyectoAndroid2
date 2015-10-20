@@ -30,6 +30,14 @@
             android:name=".Crear_E_Datos"
             android:label="@string/title_activity_crear__e__datos" >
         </activity>
+        <activity
+            android:name=".Set_date"
+            android:label="@string/title_activity_set_date" >
+        </activity>
+        <activity
+            android:name=".Hora"
+            android:label="@string/title_activity_hora" >
+        </activity>
     </application>
 
 </manifest>

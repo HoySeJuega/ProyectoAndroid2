@@ -37,7 +37,8 @@
         android:background="@drawable/config"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
-        android:clickable="true" />
+        android:clickable="true"
+        android:onClick="Crear_Equipos" />
 
     <ImageView
         android:layout_width="250dp"

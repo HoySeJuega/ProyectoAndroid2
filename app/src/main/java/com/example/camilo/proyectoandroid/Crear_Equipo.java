@@ -159,12 +159,15 @@ public class Crear_Equipo extends Activity
             case 1:
                 mTitle = getString(R.string.title_section1);
 
+
+
                 ImageButton btn4 = (ImageButton) findViewById(R.id.iB4);
                 btn4.setBackgroundDrawable(getResources().getDrawable(R.drawable.boton));
-                btn4.setX(55);
-                btn4.setY(440);
+                btn4.setX(138);
+
                 ImageButton btn5 = (ImageButton) findViewById(R.id.iB5);
                 btn5.setBackgroundDrawable(getResources().getDrawable(R.drawable.boton));
+                btn5.setX(430);
 
                 ImageButton btn6 = (ImageButton) findViewById(R.id.iB6);
                 btn6.setBackground(null);
@@ -182,6 +185,14 @@ public class Crear_Equipo extends Activity
                 break;
             case 2:
                 mTitle = getString(R.string.title_section2);
+
+                btn4 = (ImageButton) findViewById(R.id.iB4);
+                btn4.setBackgroundDrawable(getResources().getDrawable(R.drawable.boton));
+                btn4.setX(120);
+
+                btn5 = (ImageButton) findViewById(R.id.iB5);
+                btn5.setBackgroundDrawable(getResources().getDrawable(R.drawable.boton));
+                btn5.setX(450);
 
                 btn7 = (ImageButton) findViewById(R.id.iB7);
                 btn7.setBackgroundDrawable(getResources().getDrawable(R.drawable.boton));
@@ -210,11 +221,13 @@ public class Crear_Equipo extends Activity
             case 3:
                 mTitle = getString(R.string.title_section3);
 
+
                 btn4 = (ImageButton) findViewById(R.id.iB4);
+
                 btn4.setBackgroundDrawable(getResources().getDrawable(R.drawable.boton));
                 btn5 = (ImageButton) findViewById(R.id.iB5);
                 btn5.setBackgroundDrawable(getResources().getDrawable(R.drawable.boton));
-                btn4.setX(20);
+                btn4.setX(35);
                 btn5.setX(500);
                 btn6 = (ImageButton) findViewById(R.id.iB7);
                 btn6.setBackgroundDrawable(getResources().getDrawable(R.drawable.boton));

@@ -7,6 +7,7 @@ import android.app.TimePickerDialog;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.text.format.DateUtils;
 import android.view.Menu;
@@ -14,9 +15,11 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.DatePicker;
+import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.SpinnerAdapter;
 import android.widget.TextView;
@@ -39,7 +42,7 @@ public class Crear_E_Datos extends Activity {
         Window window = this.getWindow();
         window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
         window.setStatusBarColor(this.getResources().getColor(R.color.verde));
-
+/*
 
         spinner = (Spinner) findViewById(R.id.spinner);
 
@@ -52,12 +55,70 @@ public class Crear_E_Datos extends Activity {
 
         spinner.setAdapter(adapter);
 
+        spinner.setOnItemSelectedListener(
+                new AdapterView.OnItemSelectedListener() {
 
+                    @Override
+                    public void onItemSelected(AdapterView<?> arg0, View arg1,
+                                               int arg2, long arg3) {
+                        if(0 == arg2){
+
+                            System.out.println("Futbol 5");
+                            ImageView imageView = (ImageView) findViewById(R.id.imageView2);
+                            imageView.setBackgroundResource(R.drawable.cancha);
+
+
+
+
+
+
+                        }
+                        if(1==arg2){
+
+                            System.out.println("Futbol 7");
+
+
+
+
+
+
+
+                        }
+                        if(2 == arg2){
+
+                            System.out.println("Futbol 9");
+
+
+
+
+
+                        }
+                        if(3 == arg2){
+
+                            System.out.println("Futbol 11");
+
+
+
+                        }
+
+
+                    }
+
+                    @Override
+                    public void onNothingSelected(AdapterView<?> arg0) {
+                        // TODO Auto-generated method stub
+
+                    }
+                    //add some code here
+                }
+        );
 
 
     }
     public Spinner spinner;
+*/
 
+    }
     public void dia(View v) {
         Intent i = new Intent(this, Set_date.class );
         startActivity(i);
@@ -81,13 +142,8 @@ public class Crear_E_Datos extends Activity {
 
 
     }
-    Button btnTime, btnDate;
-    TextView tvTime, tvDate;
 
-    TimePickerDialog timePickerDialog;
-    DatePickerDialog datePickerDialog;
 
-    Calendar calendar = Calendar.getInstance();
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will

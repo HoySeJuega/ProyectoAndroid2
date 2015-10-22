@@ -23,6 +23,6 @@
     <string name="action_example">Example action</string>
     <string name="title_activity_equipos__creados">Tus Equipos:</string>
     <string name="title_activity_crear__e__datos">Datos:</string>
-    <string name="title_activity_set_date">DIa:</string>
+    <string name="title_activity_set_date">Selecciona un Dia:</string>
     <string name="title_activity_hora">Hora:</string>
 </resources>

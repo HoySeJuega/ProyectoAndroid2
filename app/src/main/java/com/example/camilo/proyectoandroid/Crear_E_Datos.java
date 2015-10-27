@@ -100,14 +100,14 @@ public void Confirmar(View v){
             startActivity(b);}
 
     if(j==1) {
-        Intent a = new Intent(this, Crear_Equipo.class);
+        Intent a = new Intent(this, Cancha7.class);
         startActivity(a);
     }
         if(j==2){
-            Intent r= new Intent(this, Crear_Equipo.class);
+            Intent r= new Intent(this, Cancha9.class);
             startActivity(r);}
        if(j==3){
-            Intent t= new Intent(this, Crear_Equipo.class);
+            Intent t= new Intent(this, Cancha11.class);
             startActivity(t);
     }}
 

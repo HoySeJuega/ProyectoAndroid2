@@ -26,4 +26,7 @@
     <string name="title_activity_set_date">Selecciona un Dia:</string>
     <string name="title_activity_hora">Hora:</string>
     <string name="title_activity_cancha5">Futbol 5</string>
+    <string name="title_activity_cancha7">Futbol 7</string>
+    <string name="title_activity_cancha9">Futbol 9</string>
+    <string name="title_activity_cancha11">Futbol 11</string>
 </resources>

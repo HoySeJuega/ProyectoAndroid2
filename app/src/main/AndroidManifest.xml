@@ -42,6 +42,18 @@
             android:name=".Cancha5"
             android:label="@string/title_activity_cancha5" >
         </activity>
+        <activity
+            android:name=".Cancha7"
+            android:label="@string/title_activity_cancha7" >
+        </activity>
+        <activity
+            android:name=".Cancha9"
+            android:label="@string/title_activity_cancha9" >
+        </activity>
+        <activity
+            android:name=".Cancha11"
+            android:label="@string/title_activity_cancha11" >
+        </activity>
     </application>
 
 </manifest>

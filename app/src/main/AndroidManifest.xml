@@ -38,6 +38,10 @@
             android:name=".Hora"
             android:label="@string/title_activity_hora" >
         </activity>
+        <activity
+            android:name=".Cancha5"
+            android:label="@string/title_activity_cancha5" >
+        </activity>
     </application>
 
 </manifest>

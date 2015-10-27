@@ -70,6 +70,7 @@ spinner.setAdapter(adapter);
             String Todo2;
             Todo2="Hora Escogida: "+hora + ":" + min;
             textView1.setText(Todo2);
+
         }
 
     }
@@ -89,10 +90,34 @@ spinner.setAdapter(adapter);
 
 public void Confirmar(View v){
     String text;
-    System.out.println(text=spinner.getSelectedItem().toString());
+
+    text=spinner.getSelectedItem().toString();
+    System.out.println(text);
+    int j =spinner.getSelectedItemPosition();
+    System.out.println(j);
+    if(j==0){
+            Intent b= new Intent(this, Cancha5.class);
+            startActivity(b);}
+
+    if(j==1) {
+        Intent a = new Intent(this, Crear_Equipo.class);
+        startActivity(a);
+    }
+        if(j==2){
+            Intent r= new Intent(this, Crear_Equipo.class);
+            startActivity(r);}
+       if(j==3){
+            Intent t= new Intent(this, Crear_Equipo.class);
+            startActivity(t);
+    }}
 
 
-}
+
+
+
+
+
+
 
 
     @Override

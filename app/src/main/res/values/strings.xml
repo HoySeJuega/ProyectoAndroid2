@@ -25,4 +25,5 @@
     <string name="title_activity_crear__e__datos">Datos:</string>
     <string name="title_activity_set_date">Selecciona un Dia:</string>
     <string name="title_activity_hora">Hora:</string>
+    <string name="title_activity_cancha5">Futbol 5</string>
 </resources>

@@ -50,7 +50,7 @@ public class Hora extends Activity {
     }
 
     private void salir() {
-            Intent i = new Intent(this, Crear_Equipo.class );
+            Intent i = new Intent(this, Crear_E_Datos.class );
             startActivity(i);
         }
 

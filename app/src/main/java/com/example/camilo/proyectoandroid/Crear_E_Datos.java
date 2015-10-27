@@ -49,9 +49,32 @@ public class Crear_E_Datos extends Activity {
         Window window = this.getWindow();
         window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
         window.setStatusBarColor(this.getResources().getColor(R.color.verde));
+        TextView textView2 = (TextView) findViewById(R.id.editText2);
+        TextView textView1 = (TextView) findViewById(R.id.editText);
 
+
+         spinner=(Spinner) findViewById(R.id.spinner);
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,R.array.Formaciones, android.R.layout.simple_spinner_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+spinner.setAdapter(adapter);
+
+        if (dia!=0) {
+
+            String Todo;
+            Todo="Dia Seleccionado: "+dia + "/" + mes + "/" + ano;
+            textView2.setText(Todo);
+        }
+
+        if(hora!=0){
+
+            String Todo2;
+            Todo2="Hora Escogida: "+hora + ":" + min;
+            textView1.setText(Todo2);
+        }
 
     }
+    public Spinner spinner;
+
     public void dia(View v) {
         Intent i = new Intent(this, Set_date.class );
         startActivity(i);
@@ -63,8 +86,13 @@ public class Crear_E_Datos extends Activity {
         startActivity(i);
     }
 
-    OnW
 
+public void Confirmar(View v){
+    String text;
+    System.out.println(text=spinner.getSelectedItem().toString());
+
+
+}
 
 
     @Override

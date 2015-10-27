@@ -1,6 +1,7 @@
 package com.example.camilo.proyectoandroid;
 
 import android.app.ActionBar;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -42,9 +43,13 @@ public void Confirmar(View view){
      ano =datePicker.getYear();
 
     System.out.println(dia + " " + mes + " " + ano);
+
+
     salir();
 }
     private void salir() {
+        Intent i = new Intent(this, Crear_E_Datos.class );
+        startActivity(i);
         finish();
     }
 }

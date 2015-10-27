@@ -33,12 +33,15 @@ public class Hora extends Activity {
         
     }
 
+
+    public static int hora,min;
+
     public void ConfirmarHora(View view){
 
         TimePicker timePicker = (TimePicker) findViewById(R.id.timePicker);
         timePicker.is24HourView();
-        int hora=timePicker.getCurrentHour();
-        int min=timePicker.getCurrentMinute();
+        hora=timePicker.getCurrentHour();
+        min=timePicker.getCurrentMinute();
 
 
 

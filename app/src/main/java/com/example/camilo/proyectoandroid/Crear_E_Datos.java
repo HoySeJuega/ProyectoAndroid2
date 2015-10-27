@@ -1,5 +1,11 @@
 package com.example.camilo.proyectoandroid;
 
+
+import static com.example.camilo.proyectoandroid.Hora.hora;
+import static com.example.camilo.proyectoandroid.Hora.min;
+import static com.example.camilo.proyectoandroid.Set_date.dia;
+import static com.example.camilo.proyectoandroid.Set_date.mes;
+import static com.example.camilo.proyectoandroid.Set_date.ano;
 import android.app.ActionBar;
 import android.app.Activity;
 import android.app.DatePickerDialog;
@@ -19,6 +25,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.DatePicker;
+import android.widget.DigitalClock;
 import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.SpinnerAdapter;
@@ -42,81 +49,7 @@ public class Crear_E_Datos extends Activity {
         Window window = this.getWindow();
         window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
         window.setStatusBarColor(this.getResources().getColor(R.color.verde));
-/*
 
-        spinner = (Spinner) findViewById(R.id.spinner);
-
-        // Create an ArrayAdapter using the string array and a default spinner layout
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
-                R.array.Formaciones, android.R.layout.simple_spinner_item);
-// Specify the layout to use when the list of choices appears
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-// Apply the adapter to the spinner
-
-        spinner.setAdapter(adapter);
-
-        spinner.setOnItemSelectedListener(
-                new AdapterView.OnItemSelectedListener() {
-
-                    @Override
-                    public void onItemSelected(AdapterView<?> arg0, View arg1,
-                                               int arg2, long arg3) {
-                        if(0 == arg2){
-
-                            System.out.println("Futbol 5");
-                            ImageView imageView = (ImageView) findViewById(R.id.imageView2);
-                            imageView.setBackgroundResource(R.drawable.cancha);
-
-
-
-
-
-
-                        }
-                        if(1==arg2){
-
-                            System.out.println("Futbol 7");
-
-
-
-
-
-
-
-                        }
-                        if(2 == arg2){
-
-                            System.out.println("Futbol 9");
-
-
-
-
-
-                        }
-                        if(3 == arg2){
-
-                            System.out.println("Futbol 11");
-
-
-
-                        }
-
-
-                    }
-
-                    @Override
-                    public void onNothingSelected(AdapterView<?> arg0) {
-                        // TODO Auto-generated method stub
-
-                    }
-                    //add some code here
-                }
-        );
-
-
-    }
-    public Spinner spinner;
-*/
 
     }
     public void dia(View v) {
@@ -130,6 +63,7 @@ public class Crear_E_Datos extends Activity {
         startActivity(i);
     }
 
+    OnW
 
 
 

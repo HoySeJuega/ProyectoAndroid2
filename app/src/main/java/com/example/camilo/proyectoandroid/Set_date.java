@@ -31,15 +31,15 @@ public class Set_date extends Activity {
 
 
     }
-
+public static int dia, mes, ano;
 
 
 public void Confirmar(View view){
 
     DatePicker datePicker = (DatePicker) findViewById(R.id.datePicker);
-    int dia=datePicker.getDayOfMonth();
-    int mes =datePicker.getMonth()+1;
-    int ano =datePicker.getYear();
+     dia=datePicker.getDayOfMonth();
+     mes =datePicker.getMonth()+1;
+     ano =datePicker.getYear();
 
     System.out.println(dia + " " + mes + " " + ano);
     salir();

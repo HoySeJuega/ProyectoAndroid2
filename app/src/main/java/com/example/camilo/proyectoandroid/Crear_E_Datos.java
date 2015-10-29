@@ -8,31 +8,26 @@ import static com.example.camilo.proyectoandroid.Set_date.mes;
 import static com.example.camilo.proyectoandroid.Set_date.ano;
 import android.app.ActionBar;
 import android.app.Activity;
-import android.app.DatePickerDialog;
-import android.app.TimePickerDialog;
+
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.text.format.DateUtils;
+
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
-import android.widget.AdapterView;
+
 import android.widget.ArrayAdapter;
-import android.widget.Button;
-import android.widget.DatePicker;
-import android.widget.DigitalClock;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.SpinnerAdapter;
 import android.widget.TextView;
-import android.widget.TimePicker;
 
-import java.util.Calendar;
 
 public class Crear_E_Datos extends Activity {
 
@@ -51,7 +46,6 @@ public class Crear_E_Datos extends Activity {
         window.setStatusBarColor(this.getResources().getColor(R.color.verde));
         TextView textView2 = (TextView) findViewById(R.id.editText2);
         TextView textView1 = (TextView) findViewById(R.id.editText);
-
 
          spinner=(Spinner) findViewById(R.id.spinner);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,R.array.Formaciones, android.R.layout.simple_spinner_item);
@@ -73,7 +67,13 @@ spinner.setAdapter(adapter);
 
         }
 
+
+
+
+
     }
+
+    public static String lugar;
     public Spinner spinner;
 
     public void dia(View v) {
@@ -91,6 +91,8 @@ spinner.setAdapter(adapter);
 public void Confirmar(View v){
     String text;
 
+    EditText lugards = (EditText) findViewById(R.id.editText3);
+    lugar=lugards.getText().toString();
     text=spinner.getSelectedItem().toString();
     System.out.println(text);
     int j =spinner.getSelectedItemPosition();

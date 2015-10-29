@@ -6,6 +6,7 @@ import static com.example.camilo.proyectoandroid.Hora.min;
 import static com.example.camilo.proyectoandroid.Set_date.dia;
 import static com.example.camilo.proyectoandroid.Set_date.mes;
 import static com.example.camilo.proyectoandroid.Set_date.ano;
+import static com.example.camilo.proyectoandroid.Crear_E_Datos.lugar;
 import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
@@ -32,7 +33,7 @@ public class Cancha5 extends Activity {
 
             Intent waIntent = new Intent(Intent.ACTION_SEND);
             waIntent.setType("text/plain");
-            String text = "Fuiste convocado para jugar un futbol 5 de arquero el dia " + dia + "/" + mes + "/" + ano + " a las: " + hora + ":" + min+" ...Te pinta?";
+            String text = "Fuiste convocado para jugar un futbol 5 en "+lugar+" de arquero el dia " + dia + "/" + mes + "/" + ano + " a las: " + hora + ":" + min+" ...Te pinta?";
 
             PackageInfo info = pm.getPackageInfo("com.whatsapp", PackageManager.GET_META_DATA);
             //Check if package exists or not. If not then code
@@ -53,7 +54,8 @@ public class Cancha5 extends Activity {
 
             Intent waIntent = new Intent(Intent.ACTION_SEND);
             waIntent.setType("text/plain");
-            String text = "Fuiste convocado para jugar un futbol 5 de defensor el dia " + dia + "/" + mes + "/" + ano + " a las: " + hora + ":" + min+" ...Te pinta?";
+            //                                               lugar esta en Crear_E_Datos
+            String text = "Fuiste convocado para jugar un futbol 5 en "+lugar+" de defensor el dia " + dia + "/" + mes + "/" + ano + " a las: " + hora + ":" + min+" ...Te pinta?";
 
             PackageInfo info = pm.getPackageInfo("com.whatsapp", PackageManager.GET_META_DATA);
             //Check if package exists or not. If not then code
@@ -79,7 +81,7 @@ public class Cancha5 extends Activity {
 
             Intent waIntent = new Intent(Intent.ACTION_SEND);
             waIntent.setType("text/plain");
-            String text = "Fuiste convocado para jugar un futbol 5 de delantero el dia "+dia+"/"+mes+"/"+ano+" a las: " +hora+":"+min+" ...Te pinta?";
+            String text = "Fuiste convocado para jugar un futbol 5 en "+lugar+" de delantero el dia "+dia+"/"+mes+"/"+ano+" a las: " +hora+":"+min+" ...Te pinta?";
 
             PackageInfo info=pm.getPackageInfo("com.whatsapp", PackageManager.GET_META_DATA);
             //Check if package exists or not. If not then code

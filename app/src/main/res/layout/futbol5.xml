@@ -5,55 +5,166 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.example.camilo.proyectoandroid.Cancha5"
-    android:background="@drawable/cancha">
+    android:isScrollContainer="true"
+    tools:context="com.example.camilo.proyectoandroid.Cancha5">
 
-    <ImageButton
-        android:layout_width="76dp"
-        android:layout_height="76dp"
-        android:id="@+id/iB1"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:background="@drawable/boton"
-        android:focusableInTouchMode="false"
-        android:clickable="true"
-        android:onClick="Arquero" />
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView2" >
 
-    <ImageButton
-        android:layout_width="76dp"
-        android:layout_height="76dp"
-        android:id="@+id/iB2"
-        android:background="@drawable/boton"
-        android:layout_above="@+id/iB1"
-        android:layout_toEndOf="@+id/iB1"
-        android:onClick="Defensor"
-        android:clickable="true" />
+        <RelativeLayout
 
-    <ImageButton
-        android:layout_width="76dp"
-        android:layout_height="76dp"
-        android:id="@+id/iB3"
-        android:background="@drawable/boton"
-        android:layout_above="@+id/iB1"
-        android:layout_toStartOf="@+id/iB1"
-        android:onClick="Defensor" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/relativeLayout"
+            android:layout_alignParentEnd="true">
 
-    <ImageButton
-        android:layout_width="76dp"
-        android:layout_height="76dp"
-        android:id="@+id/iB4"
-        android:background="@drawable/boton"
-        android:layout_centerVertical="true"
-        android:layout_alignStart="@+id/iB2"
-        android:onClick="Delantero" />
+            <ImageButton
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:id="@+id/iB1"
+                android:background="@drawable/boton"
+                android:focusableInTouchMode="false"
+                android:clickable="true"
+                android:onClick="Arquero"
+                android:layout_gravity="right"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true" />
 
-    <ImageButton
-        android:layout_width="76dp"
-        android:layout_height="76dp"
-        android:id="@+id/iB5"
-        android:background="@drawable/boton"
-        android:layout_alignTop="@+id/iB4"
-        android:layout_alignStart="@+id/iB3"
-        android:clickable="true"
-        android:onClick="Delantero" />
+            <ImageButton
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:id="@+id/iB2"
+                android:background="@drawable/boton"
+                android:onClick="Defensor"
+                android:clickable="true"
+                android:layout_gravity="right"
+                android:layout_below="@+id/iB1"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20dp" />
+
+            <ImageButton
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:id="@+id/iB3"
+                android:background="@drawable/boton"
+                android:onClick="Defensor"
+                android:layout_below="@+id/iB2"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20dp" />
+
+            <ImageButton
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:id="@+id/iB4"
+                android:background="@drawable/boton"
+                android:onClick="Delantero"
+                android:layout_below="@+id/iB3"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20dp" />
+
+            <ImageButton
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:id="@+id/iB5"
+                android:background="@drawable/boton"
+                android:clickable="true"
+                android:onClick="Delantero"
+                android:layout_below="@+id/iB4"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20dp" />
+
+            <EditText
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/iB7"
+                android:layout_alignBottom="@+id/iB1"
+                android:layout_alignParentStart="true"
+                android:layout_alignEnd="@+id/eT2" />
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/eT2"
+                android:layout_alignBottom="@+id/iB2"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@+id/iB2" />
+
+            <EditText
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/eT3"
+                android:layout_alignBottom="@+id/iB3"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@+id/iB3" />
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/eT4"
+                android:layout_above="@+id/iB5"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@+id/iB4" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre del arquero:"
+                android:id="@+id/tV1"
+                android:layout_alignParentTop="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre de defensor:"
+                android:id="@+id/tV2"
+                android:layout_alignTop="@+id/iB2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre de defensor:"
+                android:id="@+id/tV3"
+                android:layout_alignTop="@+id/iB3"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre de delantero:"
+                android:id="@+id/tV4"
+                android:layout_alignTop="@+id/iB4"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre delantero:"
+                android:id="@+id/tV5"
+                android:layout_alignTop="@+id/iB5"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/eT5"
+                android:layout_alignBottom="@+id/iB5"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@+id/iB5" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Continuar"
+                android:id="@+id/button7"
+                android:clickable="true"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/iB5"
+                android:layout_marginTop="30dp" />
+
+        </RelativeLayout>
+    </ScrollView>
+
 </RelativeLayout>

@@ -29,4 +29,6 @@
     <string name="title_activity_cancha7">Futbol 7</string>
     <string name="title_activity_cancha9">Futbol 9</string>
     <string name="title_activity_cancha11">Futbol 11</string>
+    <string name="title_activity_table"></string>
+    <string name="section_format">Hello World from section: %1$d</string>
 </resources>

@@ -100,7 +100,7 @@
         <ImageButton
             android:layout_width="76dp"
             android:layout_height="76dp"
-            android:id="@+id/iB8"
+            android:id="@+id/eT2"
             android:layout_gravity="left|top"
             android:background="@drawable/boton"
             android:layout_marginTop="80dp" />
@@ -108,7 +108,7 @@
         <ImageButton
             android:layout_width="76dp"
             android:layout_height="76dp"
-            android:id="@+id/iB10"
+            android:id="@+id/iB9"
             android:layout_gravity="center_horizontal|top"
             android:background="@drawable/boton"
             android:layout_marginRight="80dp" />

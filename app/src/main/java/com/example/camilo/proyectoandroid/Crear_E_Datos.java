@@ -67,10 +67,6 @@ spinner.setAdapter(adapter);
 
         }
 
-
-
-
-
     }
 
     public static String lugar;
@@ -89,14 +85,16 @@ spinner.setAdapter(adapter);
 
 
 public void Confirmar(View v){
-    String text;
 
+    String text;
     EditText lugards = (EditText) findViewById(R.id.editText3);
     lugar=lugards.getText().toString();
     text=spinner.getSelectedItem().toString();
     System.out.println(text);
+
     int j =spinner.getSelectedItemPosition();
     System.out.println(j);
+
     if(j==0){
             Intent b= new Intent(this, Cancha5.class);
             startActivity(b);}
@@ -111,15 +109,8 @@ public void Confirmar(View v){
        if(j==3){
             Intent t= new Intent(this, Cancha11.class);
             startActivity(t);
-    }}
-
-
-
-
-
-
-
-
+    }
+}
 
 
     @Override
@@ -127,9 +118,6 @@ public void Confirmar(View v){
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_crear__e__datos, menu);
         return true;
-
-
-
     }
 
 
@@ -147,7 +135,5 @@ public void Confirmar(View v){
 
         return super.onOptionsItemSelected(item);
     }
-
-
 
 }

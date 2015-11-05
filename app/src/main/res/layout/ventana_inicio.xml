@@ -50,4 +50,14 @@
         android:layout_alignEnd="@+id/imageButton"
         android:layout_marginRight="40dp" />
 
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/imageButton4"
+        android:background="@drawable/signo"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:clickable="true"
+        android:onClick="Team" />
+
 </RelativeLayout>

@@ -21,13 +21,13 @@ public class Hora extends Activity {
 
 
         ActionBar bar = getActionBar();
-        ColorDrawable colorDrawable = new ColorDrawable(Color.parseColor("#448AFF"));
+        ColorDrawable colorDrawable = new ColorDrawable(Color.parseColor("#00695C"));
         getActionBar().setBackgroundDrawable(colorDrawable);
 
 
         Window window = this.getWindow();
         window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-        window.setStatusBarColor(this.getResources().getColor(R.color.verde));
+        window.setStatusBarColor(this.getResources().getColor(R.color.azul1));
 
 
         

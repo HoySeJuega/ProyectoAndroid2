@@ -37,13 +37,13 @@ public class Crear_E_Datos extends Activity {
         setContentView(R.layout.crear_e_datos);
 
         ActionBar bar = getActionBar();
-        ColorDrawable colorDrawable = new ColorDrawable(Color.parseColor("#448AFF"));
+        ColorDrawable colorDrawable = new ColorDrawable(Color.parseColor("#00695C"));
         getActionBar().setBackgroundDrawable(colorDrawable);
 
 
         Window window = this.getWindow();
         window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-        window.setStatusBarColor(this.getResources().getColor(R.color.verde));
+        window.setStatusBarColor(this.getResources().getColor(R.color.azul1));
         TextView textView2 = (TextView) findViewById(R.id.editText2);
         TextView textView1 = (TextView) findViewById(R.id.editText);
 

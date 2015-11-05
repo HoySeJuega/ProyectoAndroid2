@@ -348,7 +348,9 @@
                 android:layout_alignParentTop="false"
                 android:layout_alignParentStart="false"
                 android:layout_alignParentRight="true"
-                android:layout_below="@+id/ib11c11" />
+                android:layout_below="@+id/ib11c11"
+                android:onClick="Confirmar11"
+                android:clickable="true" />
         </RelativeLayout>
     </ScrollView>
 

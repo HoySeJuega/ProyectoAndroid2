@@ -6,7 +6,10 @@ import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.Toast;
+
+import java.util.ArrayList;
 
 import static com.example.camilo.proyectoandroid.Crear_E_Datos.lugar;
 import static com.example.camilo.proyectoandroid.Hora.hora;
@@ -122,6 +125,44 @@ public class Cancha9 extends Activity {
 
     }
 
+    public void Confirmar9(View v){
+
+        EditText ed1c9= (EditText) findViewById(R.id.et1);
+        EditText ed2c9= (EditText) findViewById(R.id.et2);
+        EditText ed3c9= (EditText) findViewById(R.id.et3);
+        EditText ed4c9= (EditText) findViewById(R.id.et4);
+        EditText ed5c9= (EditText) findViewById(R.id.et5);
+        EditText ed6c9= (EditText) findViewById(R.id.et6);
+        EditText ed7c9= (EditText) findViewById(R.id.et7);
+        EditText ed8c9= (EditText) findViewById(R.id.et8);
+        EditText ed9c9= (EditText) findViewById(R.id.et9);
+
+        String aux19,aux29,aux39,aux49,aux59,aux69,aux79,aux89,aux99;
+        ArrayList<String> datos7 = new ArrayList<>();
+
+        aux19=ed1c9.getText().toString();
+        aux29=ed2c9.getText().toString();
+        aux39=ed3c9.getText().toString();
+        aux49=ed4c9.getText().toString();
+        aux59=ed5c9.getText().toString();
+        aux69=ed6c9.getText().toString();
+        aux79=ed7c9.getText().toString();
+        aux89=ed8c9.getText().toString();
+        aux99=ed9c9.getText().toString();
+
+        datos7.add(aux19);
+        datos7.add(aux29);
+        datos7.add(aux39);
+        datos7.add(aux49);
+        datos7.add(aux59);
+        datos7.add(aux69);
+        datos7.add(aux79);
+        datos7.add(aux89);
+        datos7.add(aux99);
+
+        System.out.println(datos7);
+
+    }
 
 
 

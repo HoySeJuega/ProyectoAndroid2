@@ -42,6 +42,12 @@ public class Inicio extends Activity {
         startActivity(i);
     }
 
+
+    public void Team(View view) {
+        Intent i = new Intent(this, About.class );
+        startActivity(i);
+    }
+
     public void Salir(View view) {
         finish();
     }

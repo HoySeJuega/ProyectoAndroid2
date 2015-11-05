@@ -91,7 +91,7 @@
         <ImageButton
             android:layout_width="76dp"
             android:layout_height="76dp"
-            android:id="@+id/iB7"
+            android:id="@+id/eT1"
             android:layout_gravity="right|top"
             android:background="@drawable/boton"
             android:layout_marginRight="50dp"

@@ -10,6 +10,8 @@ import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import java.util.ArrayList;
+
 import static com.example.camilo.proyectoandroid.Crear_E_Datos.lugar;
 import static com.example.camilo.proyectoandroid.Hora.hora;
 import static com.example.camilo.proyectoandroid.Hora.min;
@@ -114,8 +116,6 @@ public class Cancha7 extends Activity {
                     .show();
         }
 
-
-
     }
 
     public void Confirmar7(View v){
@@ -129,7 +129,7 @@ public class Cancha7 extends Activity {
         EditText ed7c7= (EditText) findViewById(R.id.eT7);
 
         String aux17,aux27,aux37,aux47,aux57,aux67,aux77;
-        ArrayAdapter datos7 = null;
+        ArrayList<String> datos7 = new ArrayList<>();
 
         aux17=ed1c7.getText().toString();
         aux27=ed2c7.getText().toString();
@@ -146,8 +146,8 @@ public class Cancha7 extends Activity {
         datos7.add(aux57);
         datos7.add(aux67);
         datos7.add(aux77);
-        System.out.println(datos7);
 
+        System.out.println(datos7);
 
     }
 

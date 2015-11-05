@@ -31,4 +31,5 @@
     <string name="title_activity_cancha11">Futbol 11</string>
     <string name="title_activity_table"></string>
     <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_about">about:</string>
 </resources>

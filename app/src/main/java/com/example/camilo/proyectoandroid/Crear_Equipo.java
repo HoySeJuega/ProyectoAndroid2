@@ -26,6 +26,8 @@ import android.widget.Toast;
 public class Crear_Equipo extends Activity
         implements NavigationDrawerFragment.NavigationDrawerCallbacks {
 
+
+
     private static final int PICK_CONTACT = 1;
     /**
      * Fragment managing the behaviors, interactions and presentation of the navigation drawer.
@@ -44,7 +46,7 @@ public class Crear_Equipo extends Activity
 
         ImageButton btn6 = (ImageButton) findViewById(R.id.iB6);
         btn6.setBackground(null);
-        ImageButton btn7 = (ImageButton) findViewById(R.id.eT1);
+        ImageButton btn7 = (ImageButton) findViewById(R.id.iB7);
         btn7.setBackground(null);
         ImageButton btn8 = (ImageButton) findViewById(R.id.eT2);
         btn8.setBackground(null);
@@ -142,6 +144,7 @@ public class Crear_Equipo extends Activity
 
 
 
+
                 ImageButton btn4 = (ImageButton) findViewById(R.id.iB4);
                 btn4.setBackgroundDrawable(getResources().getDrawable(R.drawable.boton));
                 btn4.setX(138);
@@ -152,7 +155,7 @@ public class Crear_Equipo extends Activity
 
                 ImageButton btn6 = (ImageButton) findViewById(R.id.iB6);
                 btn6.setBackground(null);
-                ImageButton btn7 = (ImageButton) findViewById(R.id.eT1);
+                ImageButton btn7 = (ImageButton) findViewById(R.id.iB7);
                 btn7.setBackground(null);
                 ImageButton btn8 = (ImageButton) findViewById(R.id.eT2);
                 btn8.setBackground(null);
@@ -175,7 +178,7 @@ public class Crear_Equipo extends Activity
                 btn5.setBackgroundDrawable(getResources().getDrawable(R.drawable.boton));
                 btn5.setX(450);
 
-                btn7 = (ImageButton) findViewById(R.id.eT1);
+                btn7 = (ImageButton) findViewById(R.id.iB7);
                 btn7.setBackgroundDrawable(getResources().getDrawable(R.drawable.boton));
                 btn7.setX(280);
                 btn7.setY(300);
@@ -210,7 +213,7 @@ public class Crear_Equipo extends Activity
                 btn5.setBackgroundDrawable(getResources().getDrawable(R.drawable.boton));
                 btn4.setX(35);
                 btn5.setX(500);
-                btn6 = (ImageButton) findViewById(R.id.eT1);
+                btn6 = (ImageButton) findViewById(R.id.iB7);
                 btn6.setBackgroundDrawable(getResources().getDrawable(R.drawable.boton));
                 btn6.setX(280);
                 btn6.setY(430);
@@ -235,7 +238,7 @@ public class Crear_Equipo extends Activity
             case 4:
                 mTitle = getString(R.string.title_section4);
 
-                btn7 = (ImageButton) findViewById(R.id.eT1);
+                btn7 = (ImageButton) findViewById(R.id.iB7);
                 btn7.setBackgroundDrawable(getResources().getDrawable(R.drawable.boton));
                 btn6 = (ImageButton) findViewById(R.id.iB6);
                 btn6.setBackgroundDrawable(getResources().getDrawable(R.drawable.boton));

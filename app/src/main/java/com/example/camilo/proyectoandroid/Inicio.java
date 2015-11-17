@@ -49,6 +49,7 @@ public class Inicio extends Activity {
     }
 
     public void Salir(View view) {
+
         finish();
     }
 

@@ -17,20 +17,10 @@ public class Hora extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hora);
-
-
-
-        ActionBar bar = getActionBar();
-        ColorDrawable colorDrawable = new ColorDrawable(Color.parseColor("#00695C"));
-        getActionBar().setBackgroundDrawable(colorDrawable);
-
-
+        getActionBar().hide();
         Window window = this.getWindow();
         window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
         window.setStatusBarColor(this.getResources().getColor(R.color.azul1));
-
-
-        
     }
 
 
@@ -52,6 +42,7 @@ public class Hora extends Activity {
     private void salir() {
             Intent i = new Intent(this, Crear_E_Datos.class );
             startActivity(i);
+            finish();
         }
 
 }

@@ -19,7 +19,7 @@ public class Set_date extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.dia);
-
+        getActionBar().hide();
         ActionBar bar = getActionBar();
         ColorDrawable colorDrawable = new ColorDrawable(Color.parseColor("#00695C"));
         getActionBar().setBackgroundDrawable(colorDrawable);
@@ -36,8 +36,9 @@ public static int dia, mes, ano;
 
 
 public void Confirmar(View view){
-
+ColorDrawable colorDrawable2 = new ColorDrawable(Color.parseColor("#00695C"));
     DatePicker datePicker = (DatePicker) findViewById(R.id.datePicker);
+    
      dia=datePicker.getDayOfMonth();
      mes =datePicker.getMonth()+1;
      ano =datePicker.getYear();

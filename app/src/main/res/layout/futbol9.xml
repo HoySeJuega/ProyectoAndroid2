@@ -18,20 +18,20 @@
             android:layout_height="match_parent">
 
             <ImageButton
-                android:layout_width="76dp"
-                android:layout_height="76dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
                 android:id="@+id/ib1"
-                android:background="@drawable/boton"
+                android:background="@drawable/wasap"
                 android:clickable="true"
                 android:onClick="Arquero"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true" />
 
             <ImageButton
-                android:layout_width="76dp"
-                android:layout_height="76dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
                 android:id="@+id/ib2"
-                android:background="@drawable/boton"
+                android:background="@drawable/wasap"
                 android:clickable="true"
                 android:onClick="Defensor"
                 android:layout_below="@+id/ib1"
@@ -39,10 +39,10 @@
                 android:layout_marginTop="20dp" />
 
             <ImageButton
-                android:layout_width="76dp"
-                android:layout_height="76dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
                 android:id="@+id/ib3"
-                android:background="@drawable/boton"
+                android:background="@drawable/wasap"
                 android:layout_alignParentEnd="true"
                 android:clickable="true"
                 android:onClick="Defensor"
@@ -50,10 +50,10 @@
                 android:layout_marginTop="20dp" />
 
             <ImageButton
-                android:layout_width="76dp"
-                android:layout_height="76dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
                 android:id="@+id/ib4"
-                android:background="@drawable/boton"
+                android:background="@drawable/wasap"
                 android:clickable="true"
                 android:onClick="Defensor"
                 android:layout_below="@+id/ib3"
@@ -61,10 +61,10 @@
                 android:layout_marginTop="20dp" />
 
             <ImageButton
-                android:layout_width="76dp"
-                android:layout_height="76dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
                 android:id="@+id/ib5"
-                android:background="@drawable/boton"
+                android:background="@drawable/wasap"
                 android:layout_alignStart="@+id/ib2"
                 android:clickable="true"
                 android:onClick="Mediocampo"
@@ -72,10 +72,10 @@
                 android:layout_marginTop="20dp" />
 
             <ImageButton
-                android:layout_width="76dp"
-                android:layout_height="76dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
                 android:id="@+id/ib6"
-                android:background="@drawable/boton"
+                android:background="@drawable/wasap"
                 android:layout_alignStart="@+id/ib3"
                 android:clickable="true"
                 android:onClick="Mediocampo"
@@ -83,10 +83,10 @@
                 android:layout_marginTop="20dp" />
 
             <ImageButton
-                android:layout_width="76dp"
-                android:layout_height="76dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
                 android:id="@+id/ib7"
-                android:background="@drawable/boton"
+                android:background="@drawable/wasap"
                 android:clickable="true"
                 android:onClick="Mediocampo"
                 android:layout_below="@+id/ib6"
@@ -94,10 +94,10 @@
                 android:layout_marginTop="20dp" />
 
             <ImageButton
-                android:layout_width="76dp"
-                android:layout_height="76dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
                 android:id="@+id/ib8"
-                android:background="@drawable/boton"
+                android:background="@drawable/wasap"
                 android:clickable="true"
                 android:onClick="Delantero"
                 android:layout_alignParentTop="false"
@@ -108,10 +108,10 @@
                 android:layout_marginTop="20dp" />
 
             <ImageButton
-                android:layout_width="76dp"
-                android:layout_height="76dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
                 android:id="@+id/ib9"
-                android:background="@drawable/boton"
+                android:background="@drawable/wasap"
                 android:layout_toStartOf="@+id/ib5"
                 android:clickable="true"
                 android:onClick="Delantero"

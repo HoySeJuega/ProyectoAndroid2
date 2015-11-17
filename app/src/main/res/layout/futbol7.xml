@@ -19,20 +19,20 @@
             android:layout_alignParentStart="true">
 
             <ImageButton
-                android:layout_width="76dp"
-                android:layout_height="76dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
                 android:id="@+id/iB1"
-                android:background="@drawable/boton"
+                android:background="@drawable/wasap"
                 android:clickable="true"
                 android:onClick="Arquero"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true" />
 
             <ImageButton
-                android:layout_width="76dp"
-                android:layout_height="76dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
                 android:id="@+id/iB2"
-                android:background="@drawable/boton"
+                android:background="@drawable/wasap"
                 android:clickable="true"
                 android:onClick="Delantero"
                 android:layout_alignParentEnd="true"
@@ -40,10 +40,10 @@
                 android:layout_marginTop="20dp" />
 
             <ImageButton
-                android:layout_width="76dp"
-                android:layout_height="76dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
                 android:id="@+id/iB3"
-                android:background="@drawable/boton"
+                android:background="@drawable/wasap"
                 android:clickable="true"
                 android:onClick="Delantero"
                 android:layout_below="@+id/iB2"
@@ -51,10 +51,10 @@
                 android:layout_marginTop="20dp" />
 
             <ImageButton
-                android:layout_width="76dp"
-                android:layout_height="76dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
                 android:id="@+id/iB4"
-                android:background="@drawable/boton"
+                android:background="@drawable/wasap"
                 android:clickable="true"
                 android:onClick="Defensor"
                 android:layout_alignParentEnd="true"
@@ -62,10 +62,10 @@
                 android:layout_marginTop="20dp" />
 
             <ImageButton
-                android:layout_width="76dp"
-                android:layout_height="76dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
                 android:id="@+id/iB5"
-                android:background="@drawable/boton"
+                android:background="@drawable/wasap"
                 android:layout_alignParentEnd="true"
                 android:onClick="Mediocampo"
                 android:clickable="true"
@@ -73,10 +73,10 @@
                 android:layout_marginTop="20dp" />
 
             <ImageButton
-                android:layout_width="76dp"
-                android:layout_height="76dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
                 android:id="@+id/iB6"
-                android:background="@drawable/boton"
+                android:background="@drawable/wasap"
                 android:onClick="Mediocampo"
                 android:clickable="true"
                 android:layout_below="@+id/iB5"
@@ -84,10 +84,10 @@
                 android:layout_marginTop="20dp" />
 
             <ImageButton
-                android:layout_width="76dp"
-                android:layout_height="76dp"
-                android:id="@+id/eT1"
-                android:background="@drawable/boton"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:id="@+id/iB7"
+                android:background="@drawable/wasap"
                 android:clickable="true"
                 android:onClick="Delantero"
                 android:layout_below="@+id/iB6"
@@ -197,8 +197,8 @@
                 android:layout_alignParentTop="false"
                 android:layout_alignParentStart="true"
                 android:layout_marginTop="59dp"
-                android:layout_toStartOf="@+id/eT1"
-                android:layout_alignBottom="@+id/eT1" />
+                android:layout_toStartOf="@+id/iB7"
+                android:layout_alignBottom="@+id/iB7" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -206,7 +206,7 @@
                 android:text="Nombre de mediocampo:"
                 android:id="@+id/tV7"
                 android:layout_alignEnd="@+id/tV6"
-                android:layout_alignTop="@+id/eT1" />
+                android:layout_alignTop="@+id/iB7" />
 
             <Button
                 android:layout_width="wrap_content"
@@ -214,7 +214,7 @@
                 android:text="Confirmar"
                 android:id="@+id/button8"
                 android:layout_marginTop="30dp"
-                android:layout_below="@+id/eT1"
+                android:layout_below="@+id/iB7"
                 android:layout_alignParentEnd="true"
                 android:onClick="Confirmar7"
                 android:longClickable="false"

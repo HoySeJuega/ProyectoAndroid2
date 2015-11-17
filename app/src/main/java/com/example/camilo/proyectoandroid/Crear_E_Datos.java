@@ -31,13 +31,19 @@ import android.widget.TextView;
 
 public class Crear_E_Datos extends Activity {
 
+    public static String allfecha;
+    public static String allhora;
+    public static String canchaType;
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.crear_e_datos);
 
         ActionBar bar = getActionBar();
-        ColorDrawable colorDrawable = new ColorDrawable(Color.parseColor("#00695C"));
+        ColorDrawable colorDrawable = new ColorDrawable(Color.parseColor("#00897B"));
         getActionBar().setBackgroundDrawable(colorDrawable);
 
 
@@ -52,18 +58,18 @@ public class Crear_E_Datos extends Activity {
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 spinner.setAdapter(adapter);
 
+
         if (dia!=0) {
 
-            String Todo;
-            Todo="Dia Seleccionado: "+dia + "/" + mes + "/" + ano;
-            textView2.setText(Todo);
+            allfecha=dia + "/" + mes + "/" + ano;
+            textView2.setText("Dia Seleccionado: "+allfecha);
         }
 
         if(hora!=0){
 
-            String Todo2;
-            Todo2="Hora Escogida: "+hora + ":" + min;
-            textView1.setText(Todo2);
+
+            allhora=hora + ":" + min;
+            textView1.setText("Hora Escogida: "+ allhora);
 
         }
 
@@ -75,17 +81,20 @@ spinner.setAdapter(adapter);
     public void dia(View v) {
         Intent i = new Intent(this, Set_date.class );
         startActivity(i);
+
     }
 
 
     public void hora(View View) {
         Intent i= new Intent(this, Hora.class);
         startActivity(i);
+
     }
 
 
 public void Confirmar(View v){
 
+    int index = -1;
     String text;
     EditText lugards = (EditText) findViewById(R.id.editText3);
     lugar=lugards.getText().toString();
@@ -97,18 +106,26 @@ public void Confirmar(View v){
 
     if(j==0){
             Intent b= new Intent(this, Cancha5.class);
-            startActivity(b);}
+            startActivity(b);
+            canchaType="cancha 5";
+            finish();}
 
     if(j==1) {
         Intent a = new Intent(this, Cancha7.class);
         startActivity(a);
+        canchaType="cancha 7";
+        finish();
     }
         if(j==2){
             Intent r= new Intent(this, Cancha9.class);
-            startActivity(r);}
+            startActivity(r);
+            canchaType="cancha 9";
+            finish();}
        if(j==3){
             Intent t= new Intent(this, Cancha11.class);
             startActivity(t);
+           canchaType="cancha 11";
+           finish();
     }
 }
 

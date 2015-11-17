@@ -26,7 +26,7 @@ public class Inicio extends Activity {
     }
 
     public void Crear_Equipos(View view) {
-        Intent i = new Intent(this, Crear_Equipo.class );
+        Intent i = new Intent(this, Modif5.class );
         startActivity(i);
     }
 

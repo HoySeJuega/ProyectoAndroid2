@@ -124,24 +124,24 @@ public void Confirmar(View v){
             Intent b= new Intent(this, Cancha5.class);
             startActivity(b);
             canchaType="cancha 5";
-            finish();}
+            ;}
 
     if(j==1) {
         Intent a = new Intent(this, Cancha7.class);
         startActivity(a);
         canchaType="cancha 7";
-        finish();
+        ;
     }
         if(j==2){
             Intent r= new Intent(this, Cancha9.class);
             startActivity(r);
             canchaType="cancha 9";
-            finish();}
+            ;}
        if(j==3){
             Intent t= new Intent(this, Cancha11.class);
             startActivity(t);
            canchaType="cancha 11";
-           finish();
+           ;
     }
 }
 

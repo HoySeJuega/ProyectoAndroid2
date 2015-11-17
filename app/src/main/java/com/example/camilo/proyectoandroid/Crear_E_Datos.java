@@ -13,6 +13,7 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
+import android.net.Uri;
 import android.os.Bundle;
 
 import android.view.Menu;
@@ -27,6 +28,7 @@ import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.SpinnerAdapter;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 public class Crear_E_Datos extends Activity {
@@ -77,6 +79,20 @@ spinner.setAdapter(adapter);
 
     public static String lugar;
     public Spinner spinner;
+
+
+    public void maps(View v) {
+        Intent intent = new Intent();
+        intent.setAction(Intent.ACTION_VIEW);
+        intent.addCategory(Intent.CATEGORY_BROWSABLE);
+        intent.setData(Uri.parse("https://www.google.com.ar/maps/search/canchas+en+cordoba/@-31.361994,-64.2377467,13z"));
+        startActivity(intent);
+
+        Toast.makeText(getApplicationContext(), "Canchas de futbol en Cordoba",
+                Toast.LENGTH_SHORT).show();
+    }
+
+
 
     public void dia(View v) {
         Intent i = new Intent(this, Set_date.class );

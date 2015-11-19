@@ -33,4 +33,7 @@
     <string name="section_format">Hello World from section: %1$d</string>
     <string name="title_activity_about">about:</string>
     <string name="title_activity_modif5">Datos:</string>
+    <string name="title_activity_modif7">Datos</string>
+    <string name="title_activity_modif11">Datos.</string>
+    <string name="title_activity_modif9">Datos:</string>
 </resources>

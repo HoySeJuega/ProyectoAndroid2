@@ -7,8 +7,6 @@ import static com.example.camilo.proyectoandroid.Set_date.dia;
 import static com.example.camilo.proyectoandroid.Set_date.mes;
 import static com.example.camilo.proyectoandroid.Set_date.ano;
 import static com.example.camilo.proyectoandroid.Crear_E_Datos.lugar;
-import static com.example.camilo.proyectoandroid.Crear_E_Datos.allfecha;
-import static com.example.camilo.proyectoandroid.Crear_E_Datos.allhora;
 
 import android.app.ActionBar;
 import android.content.Intent;
@@ -122,7 +120,7 @@ public class Cancha5 extends Activity {
     public void Confirmar5(View v){
         int a = 0;
 
-        EditText ed1c5= (EditText) findViewById(R.id.iB7);
+        EditText ed1c5= (EditText) findViewById(R.id.editText4);
         EditText ed2c5= (EditText) findViewById(R.id.eT2);
         EditText ed3c5= (EditText) findViewById(R.id.eT3);
         EditText ed4c5= (EditText) findViewById(R.id.eT4);

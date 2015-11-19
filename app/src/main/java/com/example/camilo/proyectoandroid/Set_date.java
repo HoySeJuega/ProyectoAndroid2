@@ -49,8 +49,6 @@ ColorDrawable colorDrawable2 = new ColorDrawable(Color.parseColor("#00695C"));
     salir();
 }
     private void salir() {
-        Intent i = new Intent(this, Crear_E_Datos.class );
-        startActivity(i);
         finish();
     }
 }

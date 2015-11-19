@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.camilo.proyectoandroid.Modif7">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView6"
+        android:fillViewport="false"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true" >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Modificar Fecha "
+                android:id="@+id/button10"
+                android:clickable="true"
+                android:onClick="dia"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText9"
+                android:layout_alignParentStart="true"
+                android:editable="false"
+                android:enabled="true"
+                android:layout_below="@+id/button10"
+                android:layout_alignParentLeft="true" />
+
+            <EditText
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText10"
+                android:enabled="true"
+                android:editable="false"
+                android:layout_below="@+id/button12"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button12"
+                android:text="Modificar Hora "
+                android:clickable="true"
+                android:onClick="hora"
+                android:layout_below="@+id/editText9"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="60dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lugar:"
+                android:id="@+id/textView7"
+                android:layout_alignTop="@+id/editText11"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText11"
+                android:editable="true"
+                android:layout_marginTop="49dp"
+                android:layout_below="@+id/editText10"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/button13"
+                android:clickable="true"
+                android:onClick="maps"
+                android:layout_alignTop="@+id/editText11"
+                android:layout_alignParentEnd="true" />
+
+            <Spinner
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner2"
+                android:layout_marginTop="60dp"
+                android:layout_below="@+id/button13"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText12"
+                android:layout_alignBottom="@+id/imageButton10"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@+id/imageButton10" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText13"
+                android:layout_alignBottom="@+id/imageButton11"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@+id/imageButton11" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText14"
+                android:layout_above="@+id/imageButton13"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@+id/imageButton12" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText15"
+                android:layout_above="@+id/imageButton14"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@+id/imageButton13" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText16"
+                android:layout_above="@+id/imageButton15"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@+id/imageButton14" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText17"
+                android:layout_alignBottom="@+id/imageButton15"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@+id/imageButton15" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText18"
+                android:layout_alignParentTop="false"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="59dp"
+                android:layout_toStartOf="@+id/imageButton16"
+                android:layout_alignBottom="@+id/imageButton16" />
+
+            <ImageButton
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:id="@+id/imageButton10"
+                android:background="@drawable/wasap"
+                android:clickable="true"
+                android:onClick="Arquero"
+                android:layout_below="@+id/spinner2"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="55dp" />
+
+            <ImageButton
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:id="@+id/imageButton11"
+                android:background="@drawable/wasap"
+                android:clickable="true"
+                android:onClick="Delantero"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/imageButton10"
+                android:layout_marginTop="20dp" />
+
+            <ImageButton
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:id="@+id/imageButton12"
+                android:background="@drawable/wasap"
+                android:clickable="true"
+                android:onClick="Delantero"
+                android:layout_below="@+id/imageButton11"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20dp" />
+
+            <ImageButton
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:id="@+id/imageButton13"
+                android:background="@drawable/wasap"
+                android:clickable="true"
+                android:onClick="Defensor"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/imageButton12"
+                android:layout_marginTop="20dp" />
+
+            <ImageButton
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:id="@+id/imageButton14"
+                android:background="@drawable/wasap"
+                android:layout_alignParentEnd="true"
+                android:onClick="Mediocampo"
+                android:clickable="true"
+                android:layout_below="@+id/imageButton13"
+                android:layout_marginTop="20dp" />
+
+            <ImageButton
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:id="@+id/imageButton15"
+                android:background="@drawable/wasap"
+                android:onClick="Mediocampo"
+                android:clickable="true"
+                android:layout_below="@+id/imageButton14"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20dp" />
+
+            <ImageButton
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:id="@+id/imageButton16"
+                android:background="@drawable/wasap"
+                android:clickable="true"
+                android:onClick="Delantero"
+                android:layout_below="@+id/imageButton15"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre del arquero:"
+                android:id="@+id/textView8"
+                android:layout_alignTop="@+id/imageButton10"
+                android:layout_alignEnd="@+id/textView9" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre defensor:"
+                android:id="@+id/textView9"
+                android:layout_alignTop="@+id/imageButton11"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre defensor:"
+                android:id="@+id/textView10"
+                android:layout_alignTop="@+id/imageButton12"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre defensor:"
+                android:id="@+id/textView11"
+                android:layout_alignTop="@+id/imageButton13"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre de mediocampo:"
+                android:id="@+id/textView12"
+                android:layout_alignTop="@+id/imageButton14"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre de mediocampo:"
+                android:id="@+id/textView13"
+                android:layout_alignTop="@+id/imageButton15"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre de mediocampo:"
+                android:id="@+id/textView14"
+                android:layout_alignEnd="@+id/textView13"
+                android:layout_alignTop="@+id/imageButton16" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Confirmar"
+                android:id="@+id/button14"
+                android:layout_marginTop="30dp"
+                android:layout_below="@+id/imageButton16"
+                android:layout_alignParentEnd="true"
+                android:onClick="Confirmar7"
+                android:longClickable="false"
+                android:clickable="true" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

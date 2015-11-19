@@ -21,61 +21,72 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="New Button"
+                android:text="Modificar Fecha "
                 android:id="@+id/bt1"
                 android:layout_alignParentTop="true"
-                android:layout_alignParentStart="true" />
+                android:layout_alignParentStart="true"
+                android:clickable="true"
+                android:onClick="dia" />
 
             <EditText
                 android:layout_width="220dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/eT1"
                 android:layout_below="@+id/bt1"
-                android:layout_alignParentStart="true" />
+                android:layout_alignParentStart="true"
+                android:editable="false"
+                android:enabled="true" />
 
             <EditText
                 android:layout_width="220dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/eT3"
                 android:layout_below="@+id/bt2"
-                android:layout_alignParentStart="true" />
+                android:layout_alignParentStart="true"
+                android:enabled="true"
+                android:editable="false" />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="New Button"
                 android:id="@+id/bt2"
                 android:layout_below="@+id/eT1"
                 android:layout_alignParentStart="true"
-                android:layout_marginTop="89dp" />
+                android:layout_marginTop="60dp"
+                android:text="Modificar Hora "
+                android:clickable="true"
+                android:onClick="hora" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="New Text"
+                android:text="Lugar:"
                 android:id="@+id/tV1"
+                android:layout_marginTop="49dp"
                 android:layout_below="@+id/eT3"
-                android:layout_alignParentStart="true"
-                android:layout_marginTop="49dp" />
+                android:layout_alignParentStart="true" />
 
             <EditText
                 android:layout_width="260dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/eT4"
                 android:layout_below="@+id/tV1"
-                android:layout_alignParentStart="true" />
+                android:layout_alignParentStart="true"
+                android:editable="true" />
 
             <Button
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:id="@+id/button11"
                 android:layout_alignTop="@+id/tV1"
-                android:layout_alignParentEnd="true" />
+                android:layout_alignParentEnd="true"
+                android:clickable="true"
+                android:onClick="maps" />
 
             <Spinner
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
-                android:id="@+id/spinner2"
+                android:id="@+id/spinner"
                 android:layout_below="@+id/eT4"
                 android:layout_alignParentStart="true"
                 android:layout_marginTop="60dp" />
@@ -130,7 +141,7 @@
                 android:clickable="true"
                 android:onClick="Arquero"
                 android:layout_gravity="right"
-                android:layout_below="@+id/spinner2"
+                android:layout_below="@+id/spinner"
                 android:layout_alignParentEnd="true"
                 android:layout_marginTop="50dp" />
 

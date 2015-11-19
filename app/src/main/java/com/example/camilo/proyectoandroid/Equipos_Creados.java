@@ -60,19 +60,19 @@ public class Equipos_Creados extends Activity {
 
                 switch (selectCancha){
                     case "cancha 5":
-                        Intent i = new Intent(getBaseContext(), Cancha5.class);
+                        Intent i = new Intent(getBaseContext(), Modif5.class);
                         startActivity(i);
                         break;
                     case "cancha 7":
-                        Intent a = new Intent(getBaseContext(),Cancha7.class);
+                        Intent a = new Intent(getBaseContext(), Modif7.class);
                         startActivity(a);
                         break;
                     case "cancha 9":
-                        Intent b = new Intent(getBaseContext(),Cancha9.class);
+                        Intent b = new Intent(getBaseContext(),Modif9.class);
                         startActivity(b);
                         break;
                     case "cancha 11":
-                        Intent o = new Intent(getBaseContext(),Cancha11.class);
+                        Intent o = new Intent(getBaseContext(),Modif11.class);
                         startActivity(o);
                         break;
                 }

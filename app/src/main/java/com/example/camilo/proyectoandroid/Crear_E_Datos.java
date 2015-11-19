@@ -60,26 +60,10 @@ public class Crear_E_Datos extends Activity {
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 spinner.setAdapter(adapter);
 
-
-        if (dia!=0) {
-
-            allfecha=dia + "/" + mes + "/" + ano;
-            textView2.setText("Dia Seleccionado: "+allfecha);
-        }
-
-        if(hora!=0){
-
-
-            allhora=hora + ":" + min;
-            textView1.setText("Hora Escogida: "+ allhora);
-
-        }
-
     }
 
     public static String lugar;
     public Spinner spinner;
-
 
     public void maps(View v) {
         Intent intent = new Intent();
@@ -106,11 +90,37 @@ spinner.setAdapter(adapter);
         startActivity(i);
 
     }
+    @Override
+    protected void onResume() {
+        super.onResume();
 
+        if (dia!=0) {
+            TextView textView2 = (TextView) findViewById(R.id.editText2);
+            allfecha=dia + "/" + mes + "/" + ano;
+            textView2.setText("Dia Seleccionado: "+allfecha);
+        }
+
+        if(hora!=0){
+
+
+            TextView textView1 = (TextView) findViewById(R.id.editText);
+            allhora=hora + ":" + min;
+            textView1.setText("Hora Escogida: "+ allhora);
+
+        }
+
+
+
+    }
 
 public void Confirmar(View v){
 
-    int index = -1;
+    TextView textView2 = (TextView) findViewById(R.id.editText);
+    textView2.setText(" " );
+
+    TextView textView3 = (TextView) findViewById(R.id.editText2);
+    textView3.setText(" ");
+
     String text;
     EditText lugards = (EditText) findViewById(R.id.editText3);
     lugar=lugards.getText().toString();
@@ -143,6 +153,9 @@ public void Confirmar(View v){
            canchaType="cancha 11";
            ;
     }
+
+
+
 }
 
 

@@ -76,7 +76,24 @@ public class Cancha7 extends Activity {
 
 
     }
+    public void grupoWp(View View) {
+        PackageManager pm = getPackageManager();
+        try {
 
+            Intent waIntent = new Intent(Intent.ACTION_SEND);
+            waIntent.setType("text/plain");
+            String text = "Gente les parece si jugamos un futbol 7 en "+lugar+" el dia " + dia + "/" + mes + "/" + ano + " a las: " + hora + ":" + min+" ??";
+            PackageInfo info = pm.getPackageInfo("com.whatsapp", PackageManager.GET_META_DATA);
+            waIntent.setPackage("com.whatsapp");
+            waIntent.putExtra(Intent.EXTRA_TEXT, text);
+            startActivity(Intent.createChooser(waIntent, "Share with"));
+
+        } catch (PackageManager.NameNotFoundException e) {
+            Toast.makeText(this, "WhatsApp not Installed", Toast.LENGTH_SHORT)
+                    .show();
+        }
+
+    }
     public void Mediocampo(View v) {
         PackageManager pm = getPackageManager();
         try {

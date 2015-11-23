@@ -84,7 +84,8 @@
                 android:clickable="true"
                 android:onClick="maps"
                 android:layout_alignTop="@+id/editText11"
-                android:layout_alignParentEnd="true" />
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/maps" />
 
             <Spinner
                 android:layout_width="200dp"

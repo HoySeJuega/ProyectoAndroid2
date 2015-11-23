@@ -202,9 +202,8 @@
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="Arquero:"
                 android:id="@+id/textView28"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentStart="true"
-                android:layout_alignTop="@+id/imageButton29" />
+                android:layout_above="@+id/editText36"
+                android:layout_alignParentStart="true" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -296,9 +295,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/button20"
-                android:text="Modificar Hora "
+                android:text="Modificar Dia:"
                 android:clickable="true"
-                android:onClick="hora"
+                android:onClick="dia"
                 android:layout_alignWithParentIfMissing="false"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentStart="true" />
@@ -343,7 +342,8 @@
                 android:onClick="maps"
                 android:layout_alignWithParentIfMissing="false"
                 android:layout_alignTop="@+id/editText33"
-                android:layout_alignParentEnd="true" />
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/maps" />
 
             <Spinner
                 android:layout_width="200dp"
@@ -357,14 +357,14 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Modificar Fecha "
+                android:text="Modificar Hora "
                 android:id="@+id/button19"
                 android:clickable="true"
-                android:onClick="dia"
+                android:onClick="hora"
                 android:layout_alignWithParentIfMissing="false"
+                android:layout_marginTop="59dp"
                 android:layout_below="@+id/editText34"
-                android:layout_alignEnd="@+id/button20"
-                android:layout_marginTop="60dp" />
+                android:layout_alignParentStart="true" />
 
             <EditText
                 android:layout_width="260dp"

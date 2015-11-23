@@ -81,7 +81,8 @@
                 android:layout_alignTop="@+id/tV1"
                 android:layout_alignParentEnd="true"
                 android:clickable="true"
-                android:onClick="maps" />
+                android:onClick="maps"
+                android:background="@drawable/maps" />
 
             <Spinner
                 android:layout_width="200dp"

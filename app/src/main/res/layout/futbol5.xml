@@ -29,7 +29,8 @@
                 android:clickable="true"
                 android:onClick="Arquero"
                 android:layout_gravity="right"
-                android:layout_alignParentTop="true"
+                android:layout_marginTop="0dp"
+                android:layout_below="@+id/imageButton28"
                 android:layout_alignParentEnd="true" />
 
             <ImageButton
@@ -112,7 +113,8 @@
                 android:layout_height="wrap_content"
                 android:text="Nombre del arquero:"
                 android:id="@+id/tV1"
-                android:layout_alignParentTop="true" />
+                android:layout_above="@+id/editText4"
+                android:layout_alignParentStart="true" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -164,6 +166,24 @@
                 android:layout_below="@+id/iB5"
                 android:layout_marginTop="30dp"
                 android:onClick="Confirmar5" />
+
+            <ImageButton
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:id="@+id/imageButton28"
+                android:background="@drawable/wasap"
+                android:layout_below="@+id/textView37"
+                android:layout_centerHorizontal="true"
+                android:onClick="grupoWp"
+                android:clickable="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enviar a grupo de whatsapp de futbol:"
+                android:id="@+id/textView37"
+                android:layout_alignParentTop="true"
+                android:layout_toStartOf="@+id/iB1" />
 
         </RelativeLayout>
     </ScrollView>
